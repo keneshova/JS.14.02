@@ -30,11 +30,35 @@ let kesha = { name: "Kesha",
  isEmployed: false
  };//свойстве может бфть что угодно
 
- let example2 = {}
  let nestan = {
   name:"Nestan",
   age:17,
   sureName: "Keneshova",
   weight: 52,
   height: 164,
+ 
 }
+
+//View, edit, add
+console.log(nestan.name);
+console.log(nestan.age);
+console.log(nestan.weight);
+
+nestan.weight = 50;
+console.log(nestan.weight);
+nestan.favouriteBooks = ["Harry Potter","Harry Pottrer 2"];
+
+//МЕТОД
+let joldosh = {
+  name: "Joldosh",
+  age:22,
+  isEmployed: false,
+  sayHello: function() {
+    console.log("Hello, I'm " + this.name);//this name доб имя jildosh
+  },
+  sayBye: function() {
+    console.log("Bye");
+  }
+};
+joldosh.sayHello();
+joldosh.sayBye();
