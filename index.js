@@ -62,3 +62,7 @@ let joldosh = {
 };
 joldosh.sayHello();
 joldosh.sayBye();
+joldosh.name = "gorgeous";
+joldosh.sayHello();
+
+console.log(joldosh.age);
